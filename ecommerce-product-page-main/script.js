@@ -16,7 +16,7 @@ const emptyCart = document.getElementById("empty-cart");
 const deleteIcon = cartDetails.querySelector("[alt=icon-delete]");
 const modalMainImage = modalContainer.querySelector(".modal > div > img");
 const modalThumbnailImages = modalContainer.querySelectorAll(".modal-thumbnails span");
-const navigationButton =modalContainer.getElementByclassName(".navigation-button");
+const navigationButton = modalContainer.getElementByclassName(".navigation-button");
 
 let cartItems = 0;
 if (cartItems < 1) {
@@ -112,12 +112,12 @@ for (let i = 0; i < modalThumbnailImages.length; i++) {
 
 }
 
-navigationButton[i].onclick =() => {
-  let currentImagePosition = Array.from(modalThumbnailImages).findIndex((thumb) => thumb.firstElementChild.className==="active-thumbnail") ;
+navigationButton[i].onclick = () => {
+  let currentImagePosition = Array.from(modalThumbnailImages).findIndex((thumb) => thumb.firstElementChild.className === "active-thumbnail");
 
-  if (currentImagePosition > i){
-    for (let i = 0; i < modalThumbnailImages.length; i++)(
+  if (currentImagePosition > i) {
+    for (let i = 0; i < modalThumbnailImages.length; i++) {
 
-    )
+    }
   }
 }
